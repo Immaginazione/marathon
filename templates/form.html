@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+<nav>
+  <ul>
+    <li class="title">
+      <a href="{{url_for('home')}}">La Maratona!</a>
+    </li>
+  </ul>
+</nav>
+<main>
+    <h2 class="title-center">Iscriviti</h2>
+<form action="{{url_for('subscribe_confirm')}}" method="post">
+  <p>
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" />
+  </p>
+  <p>
+    <label for="lastname">Cognome</label>
+    <input type="text" name="lastname" id="lastname" />
+  </p>
+  <p>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+  </p>
+  <p class="submit">
+    <input type="submit" value="Iscriviti" />
+
+  </p>
+</form></main>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<nav>
+  <ul>
+    <li class="title">
+      <a href="{{url_for('home')}}">La Maratona!</a>
+    </li>
+    <li>
+      <a href="{{url_for('index')}}">Tutti i partecipanti</a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <h2>Iscritto!</h2>
+  <p>Grazie {{nome}} stato iscritto!</p>
+</main>
+{% endblock %}

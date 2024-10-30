@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    padding: 0 0 3rem 0;
+
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header {
+    padding: 0 0 3rem 0;
+
+}
+
+nav {
+    padding: 0 0 3rem 0;
+}
+
+nav .title {
+    flex: 1;
+}
+
+nav .title a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+nav a {
+    color: inherit;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+::marker {
+    content: "";
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    border-radius: 2px;
+    padding: 2rem;
+}
+
+form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 0.5rem;
+}
+
+label,
+input {
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 0.2rem;
+    border: 1px solid black;
+    border-radius: 2px;
+ }
+
+.submit {
+    justify-content: flex-end;
+    padding-top: 0.75rem;
+
+}
+
+.title-center {
+    text-align: center;
+}

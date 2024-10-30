@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<nav>
+  <ul>
+    <li class="title">
+        <a href="{{url_for('home')}}">La Maratona!</a>
+    </li>
+    <li>
+      <a href="{{url_for('subscribe')}}">Iscriviti</a>
+    </li>
+    <li>
+      <a href="{{url_for('index')}}">Tutti i partecipanti</a>
+    </li>
+  </ul>
+</nav>
+<header>
+    <img src="{{url_for('static', filename='img/kenneth-schipper.jpg')}}" alt="runners">
+</header>
+<main>
+    <h2>
+        Iscriviti ora!
+    </h2>
+<p>
+    Preparati a vivere un'esperienza unica nel cuore della tua città! <strong>La Maratona</strong> è molto più di una semplice maratona: è un evento che unisce atleti di ogni livello, famiglie e appassionati di sport in una celebrazione della salute e della comunità.
+</p>
+</main>
+
+{% endblock %}

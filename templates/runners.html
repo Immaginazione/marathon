@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<nav>
+  <ul>
+    <li class="title">
+        <a href="{{url_for('home')}}">La Maratona!</a>
+    </li>
+    <li>
+      <a href="{{url_for('subscribe')}}">Iscriviti</a>
+    </li>
+    <li>
+      <a href="{{url_for('index')}}">Tutti i partecipanti</a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <ul>
+  {% for nome, cognome, email in runners %}
+      <li>{{ nome }} {{ cognome }} - <a href="mailto:{{email}}">{{email}}</a></li>
+  {% endfor %}
+</ul>
+</main>
+
+{% endblock %}
